@@ -1,0 +1,43 @@
+INFORMATION
+{ 
+    Caps
+    Hoodies
+    Jacket
+    Jumpers
+    Shoes
+    Underwear
+}
+
+CUSTOMER SERVICE
+{ 
+    Customer Service
+    Shipping & Returns
+    Track Your Order
+    Cardigans
+    Trainers
+    Socks
+}
+
+STORE LOCATION
+{
+    Los Angeles - USA
+    New York - USA
+    California - USA
+    Jumpers & Cardigans
+    Shoes, Boots & Trainers
+    Underwear & Socks
+}
+
+CONTACT US
+{
+    4331 Dominion St, Burnaby, BC V5G 1C7, Canada 7X4V+M2 Burnaby, British Columbia, Canada
+
+    (+80)123 456 789 - (+80)123 456 789
+
+    Support@codev.com - Sale@codev.com
+}
+
+NEWSLETTER SUBCRIBE
+{
+Get all the best deals, sales and offers from the best online shopping store in UAE. Sign up now ! 
+}

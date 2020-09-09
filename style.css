@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(23, 2, 43);
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #212121;
+    padding: 2rem 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    padding: 1.6rem 1rem;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr;
+}
+
+.footer__left {
+    display: flex;
+}
+
+.content {
+    margin-right: 1.5rem;
+}
+
+.title {
+    margin-bottom: 2.5rem;
+}
+
+.title::after {
+    content: "";
+    border: 2px dotted #f3283c;
+    width: 4rem;
+    display: block;
+    margin-top: 2.5rem;
+}
+
+.title h3 {
+    font-size: 1.6rem;
+    color: #f1f1f1;
+}
+
+.content ul {
+    margin-top: 1rem;
+}
+
+.content ul li {
+    margin: 1.5rem 0;
+}
+
+.content ul li a:link,
+.content ul li a:visited {
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+    color: #ccc;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+    border: 2px dotted transparent;
+
+}
+
+.content ul li a:hover {
+    color: #f3283c;
+    padding-left: 0.5rem;
+    border-bottom: 2px dotted #f3283c;
+}
+
+.contact__content li {
+    color: #ccc;
+    margin-bottom: 1.6rem;
+    width: 70%;
+    font-size: 1.4rem;
+}
+
+.contact__content span {
+    margin-right: 0.5rem;
+}
+
+.contact__content span i {
+    font-size: 1.8rem;
+    color: #f3283c;
+}
+
+.contact__social ul {
+    display: flex;
+}
+
+.contact__social ul li {
+    margin-right: 1rem;
+}
+
+.fab {
+    font-size: 2rem;
+    padding: 1.5rem 1.7rem;
+    border-radius: 1rem;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.fab:hover {
+    background-color: #f3283c;
+}
+
+.fa-facebook-f {
+    padding: 1.5rem 2rem;
+    background-color: #305594;
+}
+
+.fa-twitter {
+    background-color: #28b3ff;
+}
+
+.fa-instagram {
+    background-color: #ff14ec;
+}
+
+.fa-youtube {
+    background-color: #f10;
+}
+
+.footer__right p {
+    color: #ccc;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin-bottom: 1.6rem;
+}
+
+.email {
+    padding: 1.25rem 2.8rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+form a {
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    margin-left: -2rem;
+    color: #fff;
+    background-color: #f3283c;
+}
+
+.footer__right ul {
+    display: flex;
+}
+
+.footer__right ul li {
+    margin-right: 1rem;
+}
+
+.footer__right ul img {
+    width: 10rem;
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        padding: 1.5rem .8rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .email {
+        width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    form a {
+        border-radius: 1rem;
+    }
+
+    .content {
+        margin-right: 1rem;
+    }
+
+    .footer__right ul {
+        justify-content: center;
+    }
+
+    .fab {
+        font-size: 2rem;
+        padding: 1.3rem;
+        border-radius: 1rem;
+        color: #fff;
+    }
+
+    .fa-facebook-f {
+        padding: 1.3rem 1.7rem;
+    }
+}
+
+@media only screen and (max-width:996px) {
+    .footer {
+        top: 0%;
+        left: 0%;
+        transform: translate(-0%, -0%);
+    }
+
+    .container {
+        grid-template-columns: 1.5fr 1fr;
+        row-gap: 2rem;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    .email {
+        width: 50%;
+    }
+
+    .footer__right p {
+        width: 80%;
+    }
+
+    .footer__right ul {
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .footer__left {
+        flex-direction: column;
+    }
+
+    .title {
+        display: inline-block;
+    }
+
+    .content ul li {
+        margin: 1rem 0;
+    }
+
+    .content:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
